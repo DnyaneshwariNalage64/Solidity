@@ -1,0 +1,17 @@
+//SPDX-License-Identifiers:MIT
+pragma solidity ^0.8.0;
+contract MyContract{
+    mapping (uint=>string)public names;
+    mapping(uint=>book)public  books;
+    struct book{
+        string title;
+        string author;
+    }
+    constructor(){
+        names[1]="Alice";
+        names[2]="bruce";
+        names[3]="charlie";
+    }
+    function addName(uint _id, string memory _name) public {
+        names[_id] = _name;
+    }
