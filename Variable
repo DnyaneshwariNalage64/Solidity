@@ -1,0 +1,25 @@
+//SPDX-License-Identifiers:MIT
+pragma solidity ^0.8.0.;
+contract MyContract{
+    //state var
+    int256 c=-54;
+    uint public myint=1;
+    uint256 public  my =0; 
+    uint8 public b =2;
+    string public s="hello world";
+    bytes32 public bt="hello,world!";
+    address public myadd=0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8;
+    struct MyStruct{
+        uint256 my;
+        string mystring;
+    }
+    MyStruct public myStruct=MyStruct(1,"hello world");
+  
+    
+    //local var
+    function getValue() public pure returns(uint){
+        uint value=1;
+        value=value+1;
+        return value;
+    }
+}
